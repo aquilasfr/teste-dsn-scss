@@ -1,0 +1,332 @@
+:root {
+  --color-primary: #707070;
+  --color-secondary: #888888;
+  --color-white: #ffffff;
+  --color-white-darker: #cccccc;
+  --font-sm: 12px;
+  --font-md: 14px;
+  --font-lg: 16px;
+  --border-primary: 1px solid var(--color-primary)
+;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: var(--color-primary);
+  height: 363px;
+  text-align: center;
+  padding: 40px;
+  color: var(--color-white);
+}
+
+.header__section {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 80px;
+}
+
+.header__section__paragraph {
+  font-size: 20px;
+}
+
+.header__section__paragraph--small {
+  font-size: var(--font-md);
+}
+
+.header__section__title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.nav {
+  margin-top: 60px;
+}
+
+.nav__anchor {
+  font-size: var(--font-md);
+  min-width: 160px;
+  background-color: var(--color-white);
+  color: var(--color-secondary);
+  margin: 30px;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container__section {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 60%;
+  color: var(--color-secondary);
+  padding-right: 20px;
+}
+
+.container__section__title {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.container__section__paragraph {
+  margin-top: 15px;
+}
+
+.separator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+}
+
+.separator__row {
+  height: 2px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-top: 8px;
+  background-color: var(--color-primary);
+}
+
+.separator__title {
+  text-align: center;
+  font-size: 18px;
+  color: var(--color-secondary);
+  font-weight: bold;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.form {
+  color: var(--color-secondary);
+  width: 40%;
+  padding: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: var(--font-sm);
+  margin: 10px 0;
+}
+
+.form__input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+}
+
+.form__gender__checkbox {
+  margin: 10px 0;
+}
+
+.form__gender__button {
+  cursor: pointer;
+  color: var(--color-secondary);
+  margin: 15px 0;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+  background-color: var(--color-white);
+  border-radius: 4px;
+  border: var(--border-primary);
+}
+
+.form__gender__button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: var(--color-white-darker);
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+}
+
+.list__item__square {
+  width: 200px;
+  height: 150px;
+  border: var(--border-primary);
+}
+
+.list__item__description-wrapper {
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.list__item__description-wrapper__price {
+  margin-bottom: 10px;
+  font-size: var(--font-sm);
+  color: var(--color-secondary);
+}
+
+.list__item__description-wrapper__promo {
+  margin-bottom: 10px;
+  font-size: var(--font-lg);
+  color: var(--color-secondary);
+  font-weight: bold;
+}
+
+.list__item__description-wrapper__portion {
+  margin-bottom: 10px;
+  font-size: var(--font-sm);
+  color: var(--color-secondary);
+}
+
+.list__item__description-wrapper__button {
+  width: 200px;
+  margin-bottom: 40px;
+  padding: 4px;
+  background-color: var(--color-white);
+  border: var(--border-primary);
+  border-radius: 4px;
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.list__item__description-wrapper__title {
+  margin: 14px 0;
+  font-size: var(--font-md);
+  color: var(--color-secondary);
+}
+
+.list__item__description-wrapper__paragraph {
+  margin-bottom: 20px;
+  font-size: var(--font-sm);
+  line-height: 1.5;
+  color: var(--color-secondary);
+}
+
+.register-friend {
+  width: 100%;
+}
+
+.register-friend__paragraph-fill-in {
+  text-align: center;
+  margin: 50px 0;
+  font-size: var(--font-md);
+  color: var(--color-secondary);
+}
+
+.register-friend__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.register-friend__form--button {
+  height: 30px;
+  border: var(--border-primary);
+  margin: 40px auto;
+  display: block;
+  width: 260px;
+  height: 39px;
+  border: var(--border-primary);
+  border-radius: 4px;
+  color: var(--color-secondary);
+  cursor: pointer;
+  background-color: var(--color-white);
+  font-size: var(--font-lg);
+}
+
+.register-friend__form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 720px;
+}
+
+.register-friend__form__wrapper__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.register-friend__form__wrapper__group__label {
+  width: 340px;
+  font-size: var(--font-sm);
+  color: var(--color-secondary);
+  margin-bottom: 5px;
+}
+
+.register-friend__form__wrapper__group__input {
+  height: 30px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--color-white);
+  width: 100%;
+  height: 300px;
+  background-color: var(--color-primary);
+}
+
+.footer > p {
+  margin: 5px;
+}
+/*# sourceMappingURL=style.css.map */
